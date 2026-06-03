@@ -12,4 +12,4 @@ I am a PhD candidate at the University of Oxford, supervised by **Yee Whye Teh**
 
 Research Interests
 ======
-My research interests broadly lie in Sampling, Optimisation, and Generative Modelling, with a recent focus on diffusion models. I have previously worked on stochastic gradient estimation and loss learning.
+My research interests lie in Sampling, Optimisation, and Generative Modelling, with a recent focus on diffusion models. I have previously worked on gradient estimation and loss learning.

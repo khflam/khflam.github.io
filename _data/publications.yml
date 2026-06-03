@@ -3,7 +3,7 @@
   year: 2026
   venue: "arXiv"
   type: "article"
-  description: "Adding Metropolis-Hastings adjustments to Langevin corrector steps of diffusion models."
+  description: "Mitigating discretisation bias of diffusion models, by adding Metropolis-Hastings adjustments to Langevin corrector steps."
   pdf_url: "https://arxiv.org/abs/2605.09654"
 
 - title: "Rao-Blackwellised Reparameterisation Gradients"
