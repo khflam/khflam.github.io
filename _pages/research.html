@@ -1,0 +1,102 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<h2>Papers</h2>
+
+<div class="papers-content" style="display: grid; grid-template-columns: 100px 1fr; gap: 20px; align-items: start; margin-top: 2em;">
+  
+  <div class="scholar-icon" style="padding-top: 5px; text-align: center;">
+    <a href="https://scholar.google.co.uk/citations?user=wF73WywAAAAJ" target="_blank" rel="noopener noreferrer">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar Profile" style="width: 55px; max-width: 100%;">
+    </a>
+  </div>
+
+  <div>
+    <ul class="bibliography-list" style="list-style-type: none; padding-left: 0; margin-top: 0;">
+      {% assign sorted_papers = site.data.papers | sort: "year" | reverse %}
+      
+      {% for pub in sorted_papers %}
+        <li style="margin-bottom: 25px; line-height: 1.5; font-size: 0.9em;">
+          
+          <strong><u>
+            {% if pub.pdf_url != empty and pub.pdf_url != nil %}
+              <a href="{{ pub.pdf_url }}" target="_blank" style="color: inherit; text-decoration: none;">{{ pub.title }}</a>
+            {% else %}
+              {{ pub.title }}
+            {% endif %}
+          </u></strong><br>
+          
+          {{ pub.authors }}<br>
+          
+          <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}
+
+          {% if pub.description %}
+            <div class="pub-description" style="margin-top: 4px; margin-bottom: 4px; font-size: 0.9em; font-style: italic;">
+              {{ pub.description }}
+            </div>
+          {% endif %}
+
+          {% if pub.code_url != empty and pub.code_url != nil %}
+            <a href="{{ pub.code_url }}" target="_blank">[Code]</a>
+          {% endif %}
+          
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+</div>
+
+<h2>Presentations</h2>
+<div class="presentations-content">
+  {% assign grouped_pubs = site.data.presentations | group_by: "year" | sort: "name" | reverse %}
+
+  {% for year_group in grouped_pubs %}
+    <ul style="list-style-type: none; padding-left: 0; margin-top: 1em;">
+      {% for pub in year_group.items %}
+        <li style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; align-items: baseline; font-size: 0.9em;">
+          
+          <div>
+            {{ pub.title }}
+          </div>
+          
+          <div>
+            {{ pub.venue }}{% if pub.location %}, <strong>{{ pub.location }}</strong>{% endif %}, {{ year_group.name }}
+          </div>
+          
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+</div>
+
+<h2>Posters</h2>
+<div class="posters-content">
+  {% assign grouped_pubs = site.data.posters | group_by: "year" | sort: "name" | reverse %}
+
+  {% for year_group in grouped_pubs %}
+    <ul style="list-style-type: none; padding-left: 0; margin-top: 1em;">
+      {% for pub in year_group.items %}
+        <li style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; align-items: baseline; font-size: 0.9em;">
+          
+          <div>
+            {{ pub.title }}
+          </div>
+          
+          <div>
+            {{ pub.venue }}{% if pub.location %}, <strong>{{ pub.location }}</strong>{% endif %}, {{ year_group.name }}
+          </div>
+          
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+</div>

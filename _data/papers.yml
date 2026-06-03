@@ -1,5 +1,5 @@
 - title: "Metropolis-Adjusted Diffusion Models"
-  authors: "Kevin H. Lam*, Tyler Farghly*, Christopher Williams*, Jun Yang, Yee Whye Teh, Arnaud Doucet"
+  authors: "K. H. Lam*, T. Farghly*, C. Williams*, J. Yang, Y. W. Teh, A. Doucet"
   year: 2026
   venue: "arXiv"
   type: "article"
@@ -7,15 +7,15 @@
   pdf_url: "https://arxiv.org/abs/2605.09654"
 
 - title: "Rao-Blackwellised Reparameterisation Gradients"
-  authors: "Kevin H. Lam, Thang D. Bui, George Deligiannidis, Yee Whye Teh"
+  authors: "K. H. Lam, T. D. Bui, G. Deligiannidis, Y. W. Teh"
   year: 2025
   venue: "NeurIPS"
   type: "article"
-  description: "Reducing variance of reparameterisation gradients with Rao-Blackwellisation, and casting local reparameterisation gradients as a special case."
+  description: "Rao-Blackwellising reparam gradients and casting local reparam gradients as Rao-Blackwellised reparam gradients for BNNs."
   pdf_url: "https://papers.nips.cc/paper_files/paper/2025/hash/9304fe9848ca4db73c79ac0bac414aef-Abstract-Conference.html"
 
 - title: "LegendreTron: Uprising Proper Multiclass Loss Learning"
-  authors: "Kevin H. Lam, Christian Walder, Spiridon Penev, Richard Nock"
+  authors: "K. H. Lam, C. Walder, S. Penev, R. Nock"
   year: 2023
   venue: "ICML"
   type: "article"
