@@ -11,26 +11,31 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<div class="publications-content">
+  {% assign grouped_pubs = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+
+  {% for year_group in grouped_pubs %}
+    <h3 id="{{ year_group.name }}">{{ year_group.name }}</h3>
+    
+    <ul class="bibliography-list">
+      {% for pub in year_group.items %}
+        <li style="margin-bottom: 15px;">
+          <strong>{{ pub.title }}</strong><br>
+          <em>{{ pub.authors }}</em><br>
+          {{ pub.venue }}
+
+          <div class="pub-links" style="margin-top: 5px; font-size: 0.9em;">
+            {% if pub.pdf_url != empty and pub.pdf_url != nil %}
+              <a href="{{ pub.pdf_url }}" target="_blank">[PDF]</a>
+            {% endif %}
+            
+            {% if pub.code_url != empty and pub.code_url != nil %}
+              <a href="{{ pub.code_url }}" target="_blank">[Code]</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
 
-
-
+</div>

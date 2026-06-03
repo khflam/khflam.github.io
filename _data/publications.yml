@@ -1,0 +1,21 @@
+- title: "Metropolis-Adjusted Diffusion Models"
+  authors: "Kevin H. Lam*, Tyler Farghly*, Christopher Williams*, Jun Yang, Yee Whye Teh, Arnaud Doucet"
+  year: 2026
+  venue: "arXiv"
+  type: "article"
+  pdf_url: "https://arxiv.org/abs/2605.09654"
+
+- title: "Rao-Blackwellised Reparameterisation Gradients"
+  authors: "Kevin H. Lam, Thang D. Bui, George Deligiannidis, Yee Whye Teh"
+  year: 2025
+  venue: "NeurIPS"
+  type: "article"
+  pdf_url: "https://papers.nips.cc/paper_files/paper/2025/hash/9304fe9848ca4db73c79ac0bac414aef-Abstract-Conference.html"
+
+- title: "LegendreTron: Uprising Proper Multiclass Loss Learning"
+  authors: "Kevin H. Lam, Christian Walder, Spiridon Penev, Richard Nock"
+  year: 2023
+  venue: "ICML"
+  type: "article"
+  pdf_url: "https://proceedings.mlr.press/v202/lam23b.html"
+  code_url: "https://github.com/khflam/legendretron"
