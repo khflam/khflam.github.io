@@ -24,6 +24,12 @@ author_profile: true
           <em>{{ pub.authors }}</em><br>
           {{ pub.venue }}
 
+          {% if pub.description %}
+            <div class="pub-description" style="margin-top: 4px; margin-bottom: 4px; font-size: 0.95em; font-style: italic;">
+              {{ pub.description }}
+            </div>
+          {% endif %}
+
           <div class="pub-links" style="margin-top: 5px; font-size: 0.9em;">
             {% if pub.pdf_url != empty and pub.pdf_url != nil %}
               <a href="{{ pub.pdf_url }}" target="_blank">[PDF]</a>

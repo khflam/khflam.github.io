@@ -3,6 +3,7 @@
   year: 2026
   venue: "arXiv"
   type: "article"
+  description: "Adding Metropolis-Hastings adjustments to Langevin corrector steps of diffusion models."
   pdf_url: "https://arxiv.org/abs/2605.09654"
 
 - title: "Rao-Blackwellised Reparameterisation Gradients"
@@ -10,6 +11,7 @@
   year: 2025
   venue: "NeurIPS"
   type: "article"
+  description: "Reducing variance of reparameterisation gradients with Rao-Blackwellisation, and casting local reparameterisation gradients as a special case."
   pdf_url: "https://papers.nips.cc/paper_files/paper/2025/hash/9304fe9848ca4db73c79ac0bac414aef-Abstract-Conference.html"
 
 - title: "LegendreTron: Uprising Proper Multiclass Loss Learning"
@@ -17,5 +19,6 @@
   year: 2023
   venue: "ICML"
   type: "article"
+  description: "Generalising generalised linear models by learning link functions with invertible neural networks."
   pdf_url: "https://proceedings.mlr.press/v202/lam23b.html"
   code_url: "https://github.com/khflam/legendretron"
