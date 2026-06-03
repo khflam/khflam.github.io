@@ -34,6 +34,7 @@ author:
   orcid            : "https://orcid.org/0000-0001-7173-9388"
   github           : "khflam"
   linkedin         : "khflam"
+  twitter          : "khflam"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -56,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &khflam
+  username               : khflam
 og_image                 :  # Social media default site image
 og_description           :  # Social media default site image description
 # For specifying social profiles
