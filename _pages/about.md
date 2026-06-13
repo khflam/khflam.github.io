@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD candidate at the University of Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/) and [George Deligiannidis](https://ziorzis.github.io/), and supported by a Google DeepMind PhD Scholarship. 
+I am a PhD candidate at the University of Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/) and [George Deligiannidis](https://ziorzis.github.io/), and supported by a Google DeepMind PhD Scholarship. I am currently interning in the Applied Sciences Group at Microsoft, working on image editing with diffusion and flow models.
 
 Prior to my PhD, I spent six years in ML engineering, data science and analytics, and statistical modelling roles. During this time, I also earned my master's degrees in mathematics and information technology at the University of New South Wales, while working on learning proper scoring rules with [Christian Walder](https://christianwalder.com/), [Spiridon Penev](https://web.maths.unsw.edu.au/~spiro/), and [Richard Nock](https://richardnock.github.io/).
 
