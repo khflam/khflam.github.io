@@ -1,7 +1,7 @@
 - title: "Metropolis-Adjusted Diffusion Models"
   authors: "K. H. Lam*, T. Farghly*, C. Williams*, J. Yang, Y. W. Teh, A. Doucet"
   year: 2026
-  venue: "arXiv"
+  venue: "NeurIPS"
   type: "article"
   description: "Mitigating discretisation bias of diffusion models, by adding Metropolis-Hastings adjustments to Langevin corrector steps."
   pdf_url: "https://arxiv.org/abs/2605.09654"
