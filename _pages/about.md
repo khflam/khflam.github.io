@@ -14,4 +14,4 @@ Prior to my PhD, I spent six years in ML engineering, data science and analytics
 
 Research Interests
 ======
-My work lies at the intersection of generative modelling, sampling, and optimisation, with a recent focus on diffusion models. My prior work was on gradient estimation and loss learning.
+My work lies at the intersection of generative modelling, sampling, and optimisation. I currently focus on diffusion models, and have previously worked on gradient estimation and loss learning.
